@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tabs } from "@mantine/core";
+import { Tabs, Space, Divider } from "@mantine/core";
 import { MdOutlineFindInPage } from "react-icons/md";
 import { MdFindInPage } from "react-icons/md";
 import { IoIosAddCircleOutline } from "react-icons/io";

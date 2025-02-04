@@ -5,18 +5,24 @@ import User from "../../Components/Entity/User/User.jsx";
 import Category from "../../Components/Entity/Category/Category.jsx";
 import Type from "../../Components/Entity/Type/Type.jsx";
 
-const Body = () => {
-	const [pageActive, setPageActive] = useState("U");
-
-	const handleChange = (menu) => setPageActive(menu);
-
+const Body = ({ actualPage, handleChangeActualPage }) => {
 	return (
 		<>
-			{pageActive === "H" && <Home handleChange={handleChange} />}
-			{pageActive === "I" && <Introduction handleChange={handleChange} />}
-			{pageActive === "U" && <User handleChange={handleChange} />}
-			{pageActive === "C" && <Category handleChange={handleChange} />}
-			{pageActive === "T" && <Type handleChange={handleChange} />}
+			{actualPage === "H" && (
+				<Home handleChangeActualPage={handleChangeActualPage} />
+			)}
+			{actualPage === "I" && (
+				<Introduction handleChangeActualPage={handleChangeActualPage} />
+			)}
+			{actualPage === "U" && (
+				<User handleChangeActualPage={handleChangeActualPage} />
+			)}
+			{actualPage === "C" && (
+				<Category handleChangeActualPage={handleChangeActualPage} />
+			)}
+			{actualPage === "T" && (
+				<Type handleChangeActualPage={handleChangeActualPage} />
+			)}
 		</>
 	);
 };
