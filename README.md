@@ -1,5 +1,3 @@
-![Logo](https://github.com/jjmirandaa86/learningwords-api-handbook/blob/master/public/logo.svg)
-
 # Project: Learning Words API HandBook
 
 ## Introduction
