@@ -1,5 +1,7 @@
-const pathServer = "http://localhost:";
-const portServer = 3000;
+const pathServer = "https://www.learningwordsapi.acertijo.dev";
+//const pathServer = "http://localhost:";
+const portServer = "";
+//const portServer = 3000;
 const server = `${pathServer}${portServer}/`;
 
 const user = {
